@@ -28,7 +28,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+	 <script src="TemplateData/UnityProgress.js"></script>
 	
 </head>
 
@@ -83,6 +83,31 @@
         </div>
     </header>
 
+	<section>
+		<div class="template-wrap clear">
+		  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+		  <br>
+		  <div class="logo"></div>
+		  <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+		  <div class="title">DragonBones Character</div>
+		</div>
+			<script type='text/javascript'>
+		  var Module = {
+			TOTAL_MEMORY: 268435456,
+			errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+			compatibilitycheck: null,
+			backgroundColor: "#222C36",
+			splashStyle: "Light",
+			dataUrl: "Release/Character Showdown.data",
+			codeUrl: "Release/Character Showdown.js",
+			asmUrl: "Release/Character Showdown.asm.js",
+			memUrl: "Release/Character Showdown.mem",
+		  };
+		</script>
+		<script src="Release/UnityLoader.js"></script>
+	
+	</section>
+	
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
